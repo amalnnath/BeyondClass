@@ -5,4 +5,4 @@
 
 ### Task Three: Change DB credentials to your own credentials
 
-### Task Four: Make sure you are able to view the test.php file
+### Task Four: Make sure to run all the tests
