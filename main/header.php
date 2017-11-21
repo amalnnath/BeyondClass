@@ -4,7 +4,6 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">		
 	</head>
-
 	<!-- This is the Navbar -->
 	<div class="navbar navbar-xs navbar-inverse navbar-fixed-top">
 		<div class = "container">
@@ -13,6 +12,16 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class="redir" href ="#">Home</a></li>
                     <li><a class="redir" href ="#">About Us</a></li>
+                    <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Database Views
+						<span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+						          <li><a href="/beyondclass/views/dbStudent.php">Students</a></li>
+						          <li><a href="/beyondclass/views/dbCourses.php">Courses</a></li>
+						          <li><a href="/beyondclass/views/dbTutor.php">Tutors</a></li>
+						          <li><a href="/beyondclass/views/dbBooking.php">Booking</a></li>
+						        </ul>
+						      </li>
 				</ul>
 			</div>
 		</div>
