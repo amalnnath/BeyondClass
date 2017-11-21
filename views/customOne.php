@@ -1,5 +1,5 @@
 <html>
-<!-- VERSION 1.2.2 -->
+<!-- VERSION 1.2.3 -->
 <?php 
 	include_once("../main/db.php");
 	include_once("../main/header.php");

@@ -1,8 +1,10 @@
 # BeyondClass
-* Task One: Install WAMP
+### Updates To Version 1.2.3
+* Consistency
+* Readme Page
 
-* Task Two: Copy Files from GitHub to "www" folder in your pc
+### Updates To Version 1.2.2
 
-* Task Three: Change DB credentials to your own credentials
-
-* Task Four: Make sure to run all the tests
+* Header Tweaked
+* Custom One Page
+* Error Page

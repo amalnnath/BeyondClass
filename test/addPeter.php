@@ -1,4 +1,7 @@
 <?php
+/*
+VERSION 1.2.3
+*/
 
 include_once("../main/db.php");
 
