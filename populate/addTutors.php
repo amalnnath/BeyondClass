@@ -1,4 +1,7 @@
 <?php
+/*
+VERSION 1.2.1
+*/
 include_once("../main/db.php");
 $sql = "INSERT INTO TUTOR
 		VALUES 	('123456780', 'Raj Kapoor', 'MECE 3390', '4.0', '15', '2000-01-01', '2'),

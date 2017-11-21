@@ -1,4 +1,7 @@
 <?php
+/*
+VERSION 1.2.1
+*/
 include_once("../main/db.php");
 $sql = "INSERT INTO STUDENT
 		VALUES 	('111117777','John Doe','3.8','john.doe@example.com','416-647-9050','FEAS'),
@@ -15,9 +18,3 @@ $sql = "INSERT INTO STUDENT
 $query = mysqli_query($db, $sql);
 ?>
 
-<html>
-  <head>
-		<link rel="stylesheet" type="text/css" href="http://evanhahn.com/wp-content/uploads/2011/08/nonselect.css">
-		<script type="text/javascript" src="http://platform-api.sharethis.com/js/sharethis.js#property=589bbcb38cb6e0001365b8a2&product=inline-share-buttons"></script>
-	</head>
-</html>

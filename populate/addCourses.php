@@ -1,4 +1,7 @@
 <?php
+/*
+VERSION 1.2.1
+*/
 include_once("../main/db.php");
 $sql = "INSERT INTO COURSES
 		VALUES 	('MECE 3390','Mechatronics','FEAS'),
