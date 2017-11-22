@@ -1,6 +1,6 @@
 <?php
 /*
-VERSION 1.3.1
+VERSION 1.3.2
 */
 
 session_start();
@@ -19,10 +19,10 @@ else{
         $sql = "SELECT * FROM STUDENT WHERE S_ID='$username' LIMIT 1";
         $query = mysqli_query($db, $sql);
         $row = mysqli_fetch_array($query);
-        $db_password = $row['CellNo'];
+        $db_password = $row['Password'];
 
         if($username && $password){
-            if($password == $db_password) {
+            if(md5($password) == $db_password) {
                 echo "CORRECT LOGIN INFO";
 
                 $_SESSION['username'] = $username; 
