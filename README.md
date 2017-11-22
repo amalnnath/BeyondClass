@@ -1,4 +1,7 @@
 # BeyondClass Update Log
+### Updates To Version 1.2.9
+* Sign Up Page (Students Only)
+
 ### Updates To Version 1.2.8
 * Stylized Index Page
 
@@ -11,7 +14,7 @@
 * Add Peter Test Removed
 
 ### Updates To Version 1.2.5
-* Login System
+* Login System (Students Only)
 
 ### Updates To Version 1.2.4
 * Custom Two Page
