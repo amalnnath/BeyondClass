@@ -1,5 +1,5 @@
 <?php
-/*VERSION 1.2.6*/
+/*VERSION 1.2.7*/
 	session_start();
     	$user = $_SESSION['name'];
 
@@ -48,8 +48,7 @@
 						        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
 						        <span class="caret"></span></a>
 						        <ul class="dropdown-menu">
-						         <li><a href="profilePersonal.php?author=<?php echo $user?>">Profile</a></li>
-						         <li><a data-target ="#password" data-toggle="modal" >Change Password</a></li>
+						         <li><a href="/beyondclass/error.php<?php echo $user?>">Profile</a></li>
 						         <li><a href="/beyondclass/main/destroy.php">Logout</a></li>
 						        </ul>
 						      </li>

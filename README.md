@@ -1,5 +1,8 @@
 # BeyondClass Update Log
-### Updates To Version 1.2.5
+### Updates To Version 1.2.7
+* Bug Fixes
+
+### Updates To Version 1.2.6
 * Improved Login System
 * Destroy Page
 * Add Peter Test Removed
