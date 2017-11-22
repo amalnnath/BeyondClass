@@ -1,4 +1,7 @@
 # BeyondClass
+### Updates To Version 1.2.5
+* Login System
+
 ### Updates To Version 1.2.4
 * Custom Two Page
 * Custom Three Page
