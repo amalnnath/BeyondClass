@@ -1,8 +1,9 @@
 <?php
-/*VERSION 1.2.6*/
+/*VERSION 1.3.1*/
 	session_start();
     if(isset($_SESSION['username'])) {
     	$user = $_SESSION['username'];
+    	$dept = $_SESSION['dept'];
     	include_once("headerUser.php");
     }
     else{

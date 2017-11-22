@@ -1,4 +1,8 @@
 # BeyondClass Update Log
+### Updates To Version 1.3.1
+* Custom One tailored to User's Dept, FEAS if not signed in
+* Header, Destroy and Login changed to allow for new data
+
 ### Updates To Version 1.2.9
 * Sign Up Page (Students Only)
 

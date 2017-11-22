@@ -1,12 +1,20 @@
 <html>
-<!-- VERSION 1.2.3 -->
-<?php 
+<!-- VERSION 1.3.1 -->
+<?php
 	include_once("../main/db.php");
 	include_once("../main/header.php");
+	$deptC1 = 0;
+	if(isset($_SESSION['dept'])){
+		$deptC1 = $dept;
+	}
+	else{
+		$deptC1 = 'FEAS';
+	}
+
 	$sql = "SELECT * FROM TUTOR T
 			LEFT JOIN COURSES C ON C.CourseID = T.Course_ID
 			LEFT JOIN BOOKING B ON B.Tutor_ID = T.Tutor_ID
-			WHERE C.Department = 'FEAS'";
+			WHERE C.Department = '$deptC1'";
 	$result = mysqli_query($db, $sql);
 ?>
   <head>

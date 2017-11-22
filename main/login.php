@@ -1,6 +1,6 @@
 <?php
 /*
-VERSION 1.2.6
+VERSION 1.3.1
 */
 
 session_start();
@@ -27,6 +27,7 @@ else{
 
                 $_SESSION['username'] = $username; 
                 $_SESSION['name'] = $row['Name'];
+                $_SESSION['dept'] = $row['Department_Name'];
                 header("Location: /beyondclass/index.php");         
 
             } 
