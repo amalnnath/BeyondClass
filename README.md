@@ -1,4 +1,11 @@
 # BeyondClass
+### Updates To Version 1.2.4
+* Custom Two Page
+* Custom Three Page
+* Modified Header
+* Home Page
+* Error Page
+
 ### Updates To Version 1.2.3
 * Consistency
 * Readme Page
