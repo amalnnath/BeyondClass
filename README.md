@@ -1,4 +1,9 @@
-# BeyondClass
+# BeyondClass Update Log
+### Updates To Version 1.2.5
+* Improved Login System
+* Destroy Page
+* Add Peter Test Removed
+
 ### Updates To Version 1.2.5
 * Login System
 
