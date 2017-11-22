@@ -1,4 +1,7 @@
 # BeyondClass Update Log
+### Updates To Version 1.2.8
+* Stylized Index Page
+
 ### Updates To Version 1.2.7
 * Bug Fixes
 

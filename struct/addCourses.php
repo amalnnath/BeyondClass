@@ -11,4 +11,5 @@ $sql = "INSERT INTO COURSES
         ('BUSI 3110', 'Intro to Taxation', 'FBIT'),
         ('ELEE 3130', 'Communication Systems', 'FEAS')";
 $query = mysqli_query($db, $sql);
+echo "Courses has been populated!"
 ?>

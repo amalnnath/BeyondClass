@@ -11,4 +11,5 @@ $sql = "INSERT INTO TUTOR
       ('123456784', 'Bob Doe', 'BUSI 3110', '3.6', '10', '2000-05-05', '1'),
       ('123456785', 'Jamie Metha', 'ELEE 3130', '3.5', '12.5', '2000-06-06', '2')";
 $query = mysqli_query($db, $sql);
+echo "Tutors has been populated!"
 ?>

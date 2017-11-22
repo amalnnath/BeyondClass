@@ -16,5 +16,6 @@ $sql = "INSERT INTO STUDENT
         ('907622344', 'Nav Singh', '3.6', 'nav.singh@example.com', '289-416-4160', 'FESNS'),
         ('591822233', 'Steve Bill', '3.5', 'steve.bill@example.com', '416-647-9059', 'FEAS')";
 $query = mysqli_query($db, $sql);
+echo "Students has been populated!"
 ?>
 
