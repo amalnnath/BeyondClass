@@ -1,6 +1,6 @@
 <?php
 /*
-VERSION 1.3.2
+VERSION 1.3.4
 */
 
 session_start();
@@ -16,10 +16,12 @@ else{
         $password = $_POST['password'];
         $username = mysqli_real_escape_string($db, $username);
         $password = mysqli_real_escape_string($db, $password);
-        $sql = "SELECT * FROM STUDENT WHERE S_ID='$username' LIMIT 1";
+        $sql = "SELECT * FROM TUTOR WHERE Tutor_ID='$username' LIMIT 1";
         $query = mysqli_query($db, $sql);
         $row = mysqli_fetch_array($query);
         $db_password = $row['Password'];
+
+
 
         if($username && $password){
             if(md5($password) == $db_password) {
@@ -32,11 +34,29 @@ else{
 
             } 
             else {
-                echo "INCORRECT LOGIN INFO";
+
+                $sql = "SELECT * FROM STUDENT WHERE S_ID='$username' LIMIT 1";
+                $query = mysqli_query($db, $sql);
+                $row = mysqli_fetch_array($query);
+                $db_password = $row['Password'];
+
+                if(md5($password) == $db_password) {
+                echo "CORRECT LOGIN INFO";
+
+                $_SESSION['username'] = $username; 
+                $_SESSION['name'] = $row['Name'];
+                $_SESSION['dept'] = $row['Department_Name'];
+                header("Location: /beyondclass/index.php");
+                } 
+
+                else{
+
+                echo "INCORRECT LOGIN INFO! ";
                 echo "DATABASE:";
                 echo $db_password;
                 echo "PROVIDED:";
                 echo $password;
+                }   
             }
         }
 

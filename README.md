@@ -1,4 +1,8 @@
 # BeyondClass Update Log
+### Updates To Version 1.3.5
+* Students and Tutors can now both log in or sign up!
+
+
 ### Updates To Version 1.3.4
 * Fixes to both headers
 
