@@ -1,12 +1,11 @@
 <?php
-/*VERSION 1.2.7*/
+/*VERSION 1.3.4*/
 	session_start();
     	$user = $_SESSION['name'];
 
 ?>	
 
 <html>
-<!-- VERSION 1.2.5 -->
 	<head>
 		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
@@ -35,13 +34,11 @@
 							<li><a href="/beyondclass/views/customOne.php">View One</a></li>
 						    <li><a href="/beyondclass/views/customTwo.php">View Two</a></li>
 						    <li><a href="/beyondclass/views/customThree.php">View Three</a></li>
-						    <li><a href="/beyondclass/error.php">View Four</a></li>
-						    <li><a href="/beyondclass/error.php">View Five</a></li>
-						    <li><a href="//beyondclass/error.php">View Six</a></li>
-						    <li><a href="/beyondclass/error.php">View Seven</a></li>
-						    <li><a href="/beyondclass/error.php">View Eight</a></li>
-						    <li><a href="/beyondclass/error.php">View Nine</a></li>
-						    <li><a href="/beyondclass/error.php">View Ten</a></li>
+						    <li><a href="/beyondclass/views/customSix.php">View Six</a></li>
+						    <li><a href="/beyondclass/views/customSeven.php">View Seven</a></li>
+						    <li><a href="/beyondclass/views/customEight.php">View Eight</a></li>
+						    <li><a href="/beyondclass/views/customNine.php">View Nine</a></li>
+						    <li><a href="/beyondclass/views/customTen.php">View Ten</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">

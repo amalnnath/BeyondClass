@@ -1,4 +1,7 @@
 # BeyondClass Update Log
+### Updates To Version 1.3.4
+* Fixes to both headers
+
 ### Updates To Version 1.3.3
 * Views 6 - 10
 * Tweaked Header to navigate views 6 - 10
