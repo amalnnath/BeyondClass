@@ -1,4 +1,8 @@
 # BeyondClass Update Log
+### Updates To Version 1.3.3
+* Views 6 - 10
+* Tweaked Header to navigate views 6 - 10
+
 ### Updates To Version 1.3.2
 * Password column in Tutor and Student tables
 * Index, Login and Signup have been changed to allow for new data

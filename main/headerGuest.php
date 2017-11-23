@@ -30,11 +30,11 @@
 						    <li><a href="/beyondclass/views/customThree.php">View Three</a></li>
 						    <li><a href="/beyondclass/error.php">View Four</a></li>
 						    <li><a href="/beyondclass/error.php">View Five</a></li>
-						    <li><a href="//beyondclass/error.php">View Six</a></li>
-						    <li><a href="/beyondclass/error.php">View Seven</a></li>
-						    <li><a href="/beyondclass/error.php">View Eight</a></li>
-						    <li><a href="/beyondclass/error.php">View Nine</a></li>
-						    <li><a href="/beyondclass/error.php">View Ten</a></li>
+						    <li><a href="/beyondclass/views/customSix.php">View Six</a></li>
+						    <li><a href="/beyondclass/views/customSeven.php">View Seven</a></li>
+						    <li><a href="/beyondclass/views/customEight.php">View Eight</a></li>
+						    <li><a href="/beyondclass/views/customNine.php">View Nine</a></li>
+						    <li><a href="/beyondclass/views/customTen.php">View Ten</a></li>
 						</ul>
 					</li>
 					<li>

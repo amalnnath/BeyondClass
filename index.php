@@ -53,6 +53,7 @@
                         <input  class="form-control" placeholder="Department Name" name="dept" type="text"></br>
                         <input  class="form-control" placeholder="Password" name="pwd" type="password"></br>
                         <input  class="btn btn-primary" name="signup" type="submit" value="Sign Up">
+
                         <footer class="clearfix">
                     </form>
                 </fieldset><center></p>
