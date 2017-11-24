@@ -1,4 +1,10 @@
 # BeyondClass Update Log
+### Updates To Version 1.4.2
+* Font Fixes
+
+### Updates To Version 1.4.1
+* Style Changes
+
 ### Updates To Version 1.4.0
 * Major Overhaul
 	* Admin Mode Enabled (Create Student with 0000)

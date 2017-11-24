@@ -8,8 +8,7 @@
 <html>
 	<head>
 		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>	
 	</head>
 	<!-- This is the Navbar -->
 	<nav class="navbar navbar-default probootstrap-navbar">
@@ -19,10 +18,6 @@
               <a href="#"><i class="icon-dots-three-vertical "></i></a>
             </div>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php" title="BeyondClass">BeyondClass</a>
           </div>
@@ -32,7 +27,7 @@
               <li><a href="/beyondclass/index.php">Home</a></li>
               <li><a href="/beyondclas/about.php">About Us</a></li>
               <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stats<span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stats</a>
             <ul class="dropdown-menu">
               <li><a href="/beyondclass/views/customNine.php">Failing Students</a></li>
               <li><a href="/beyondclass/views/customThree.php">Above Average Students</a></li>
@@ -43,7 +38,7 @@
               <li><a href="contact.php">Contact</a></li>
                         <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
-                    <span class="caret"></span></a>
+                    </a>
                     <ul class="dropdown-menu">
                      <li><a href="/beyondclass/error.php<?php echo $user?>">Profile</a></li>
                      <li><a href="/beyondclass/main/destroy.php">Logout</a></li>
