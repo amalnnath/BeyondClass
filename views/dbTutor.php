@@ -1,5 +1,5 @@
 <html>
-<!-- VERSION 1.2.3 -->
+<!-- VERSION 1.4.0 -->
 <?php 
 	include_once("../main/db.php");
 	include_once("../main/header.php");
@@ -20,6 +20,7 @@
 				<th>Cost</th>
 				<th>Available Date</th>
 				<th>Time</th>
+				<th>Password (Encrypted)</th>
 			</tr>
 			<?php
 				while($row = mysqli_fetch_assoc($result)){
@@ -31,6 +32,7 @@
 					echo "<td>" . $row['Cost'] . "</td>";
 					echo "<td>" . $row['Date_Available'] . "</td>";
 					echo "<td>" . $row['Time'] . "</td>";
+					echo "<td>" . $row['Password'] . "</td>";
 					echo "</tr>";
 				}
 			?>

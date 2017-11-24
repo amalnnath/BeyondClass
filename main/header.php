@@ -1,10 +1,20 @@
 <?php
-/*VERSION 1.3.1*/
+/*VERSION 1.4.0*/
 	session_start();
     if(isset($_SESSION['username'])) {
     	$user = $_SESSION['username'];
     	$dept = $_SESSION['dept'];
-    	include_once("headerUser.php");
+    	$title = $_SESSION['title'];
+
+    	if($title == 'Admin'){
+    		include_once("headerAdmin.php");
+    	} 
+    	elseif($title == 'Student') {   		
+    		include_once("headerUser.php");
+    	}
+    	else{
+    		include_once("headerTutor.php");
+    	}
     }
     else{
     	include_once("headerGuest.php");

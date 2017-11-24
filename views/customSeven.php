@@ -1,6 +1,6 @@
 <?php
 /*
-VERSION 1.3.3
+VERSION 1.4.0
 */
 	include_once("../main/db.php");
 	include_once("../main/header.php");
@@ -15,11 +15,11 @@ VERSION 1.3.3
 		<script type="text/javascript" src="http://platform-api.sharethis.com/js/sharethis.js#property=589bbcb38cb6e0001365b8a2&product=inline-share-buttons"></script>
 	</head>
 	<body style = "margin-top: 70px;">
-		<h3 align="center">Custom View 7</h3>
-		<table class="table table-hover">
+		<h3 align="center">Bookings for each Tutor</h3>
+		<table class="table table-hover" align="center">
 			<tr>
 				<th> Tutor Name </th>
-				<th> Number of Bookings </th>
+				<th> Number of Bookings</th>
 			</tr>
 			<?php
 				while($row = mysqli_fetch_assoc($result)){

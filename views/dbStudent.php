@@ -1,5 +1,5 @@
 <html>
-<!-- VERSION 1.2.3 -->
+<!-- VERSION 1.4.0 -->
 <?php 
 	include_once("../main/db.php");
 	include_once("../main/header.php");
@@ -18,7 +18,8 @@
 				<th>GPA</th>
 				<th>Email</th>
 				<th>Cellphone Number</th>
-				<th>Department</th></tr>
+				<th>Department</th>
+				<th>Password (Encrypted)</th></tr>
 			<?php
 				while($row = mysqli_fetch_assoc($result)){
 					echo "<tr>";
@@ -28,6 +29,7 @@
 					echo "<td>" . $row['Email'] . "</td>";
 					echo "<td>" . $row['CellNo'] . "</td>";
 					echo "<td>" . $row['Department_Name'] . "</td>";
+					echo "<td>" . $row['Password'] . "</td>";
 					echo "</tr>";
 				}
 			?>

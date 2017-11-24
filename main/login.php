@@ -1,6 +1,6 @@
 <?php
 /*
-VERSION 1.3.4
+VERSION 1.4.0
 */
 
 session_start();
@@ -20,6 +20,7 @@ else{
         $query = mysqli_query($db, $sql);
         $row = mysqli_fetch_array($query);
         $db_password = $row['Password'];
+        $flag = 0;
 
 
 
@@ -30,6 +31,8 @@ else{
                 $_SESSION['username'] = $username; 
                 $_SESSION['name'] = $row['Name'];
                 $_SESSION['dept'] = $row['Department_Name'];
+                $_SESSION['title'] = 'Tutor';
+
                 header("Location: /beyondclass/index.php");         
 
             } 
@@ -46,16 +49,17 @@ else{
                 $_SESSION['username'] = $username; 
                 $_SESSION['name'] = $row['Name'];
                 $_SESSION['dept'] = $row['Department_Name'];
+
+                if($username == '0000'){
+                    $_SESSION['title'] = 'Admin';
+                }
+                else{
+                    $_SESSION['title'] = 'Student';
+                }
                 header("Location: /beyondclass/index.php");
                 } 
 
                 else{
-
-                echo "INCORRECT LOGIN INFO! ";
-                echo "DATABASE:";
-                echo $db_password;
-                echo "PROVIDED:";
-                echo $password;
                 }   
             }
         }

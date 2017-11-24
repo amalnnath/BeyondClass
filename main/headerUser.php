@@ -1,5 +1,5 @@
 <?php
-/*VERSION 1.3.4*/
+/*VERSION 1.4.0*/
 	session_start();
     	$user = $_SESSION['name'];
 
@@ -18,29 +18,15 @@
 			<div class = "collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class="redir" href ="/beyondclass/index.php">Home</a></li>
-                    <li><a class="redir" href ="/beyondclass/error.php">About Us</a></li>
-                    <li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Database Views<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="/beyondclass/views/dbStudent.php">Students</a></li>
-						    <li><a href="/beyondclass/views/dbCourses.php">Courses</a></li>
-						    <li><a href="/beyondclass/views/dbTutor.php">Tutors</a></li>
-						    <li><a href="/beyondclass/views/dbBooking.php">Booking</a></li>
-						</ul>
-					</li>
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Custom Views<span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="/beyondclass/views/customOne.php">View One</a></li>
-						    <li><a href="/beyondclass/views/customTwo.php">View Two</a></li>
-						    <li><a href="/beyondclass/views/customThree.php">View Three</a></li>
-						    <li><a href="/beyondclass/views/customSix.php">View Six</a></li>
-						    <li><a href="/beyondclass/views/customSeven.php">View Seven</a></li>
-						    <li><a href="/beyondclass/views/customEight.php">View Eight</a></li>
-						    <li><a href="/beyondclass/views/customNine.php">View Nine</a></li>
-						    <li><a href="/beyondclass/views/customTen.php">View Ten</a></li>
+							<li><a href="/beyondclass/views/customOne.php">Available Sessions</a></li>
+							<li><a href="/beyondclass/views/customSix.php">Available Tutors</a></li>
+							<li><a href="/beyondclass/views/customEight.php">Search Tutors Available</a></li>
 						</ul>
 					</li>
+                    <li><a class="redir" href ="/beyondclass/error.php">About Us</a></li>
 					<li class="dropdown">
 						        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
 						        <span class="caret"></span></a>

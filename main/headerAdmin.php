@@ -1,5 +1,11 @@
+<?php
+/*VERSION 1.4.0*/
+	session_start();
+    	$user = $_SESSION['name'];
+
+?>	
+
 <html>
-<!-- VERSION 1.4.0-->
 	<head>
 		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
@@ -13,11 +19,36 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class="redir" href ="/beyondclass/index.php">Home</a></li>
                     <li><a class="redir" href ="/beyondclass/error.php">About Us</a></li>
-					<li>
-		                <p class="navbar-btn">
-		                    <a data-target ="#login" data-toggle="modal" class="btn btn-primary">Log In</a>
-		                </p>
-		            </li>
+                    <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Database Views<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/beyondclass/views/dbStudent.php">Students</a></li>
+						    <li><a href="/beyondclass/views/dbCourses.php">Courses</a></li>
+						    <li><a href="/beyondclass/views/dbTutor.php">Tutors</a></li>
+						    <li><a href="/beyondclass/views/dbBooking.php">Booking</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Custom Views<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/beyondclass/views/customOne.php">FEAS Tutors</a></li>
+						    <li><a href="/beyondclass/views/customTwo.php">High Average Tutors</a></li>
+						    <li><a href="/beyondclass/views/customThree.php">Above Average Students</a></li>
+						    <li><a href="/beyondclass/views/customSix.php">Number of Tutors</a></li>
+						    <li><a href="/beyondclass/views/customSeven.php">Bookings Per Tutor</a></li>
+						    <li><a href="/beyondclass/views/customEight.php">Search For Available Tutor</a></li>
+						    <li><a href="/beyondclass/views/customNine.php">Failing Students</a></li>
+						    <li><a href="/beyondclass/views/customTen.php">Department Averages</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
+						        <span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+						         <li><a href="/beyondclass/error.php<?php echo $user?>">Profile</a></li>
+						         <li><a href="/beyondclass/main/destroy.php">Logout</a></li>
+						        </ul>
+						      </li>
 				</ul>
 			</div>
 		</div>

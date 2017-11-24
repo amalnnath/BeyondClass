@@ -1,5 +1,5 @@
 <html>
-<!-- VERSION 1.2.4 -->
+<!-- VERSION 1.4.0 -->
 <?php
 	include_once("../main/db.php");
 	include_once("../main/header.php");
@@ -15,7 +15,7 @@
 		<script type="text/javascript" src="http://platform-api.sharethis.com/js/sharethis.js#property=589bbcb38cb6e0001365b8a2&product=inline-share-buttons"></script>
 	</head>
 	<body style = "margin-top: 70px;">
-		<h3 align="center">Custom View 3</h3>
+		<h3 align="center">Above Average Students</h3>
 		<table class="table table-hover">
 			<tr>
 				<th>Name</th>

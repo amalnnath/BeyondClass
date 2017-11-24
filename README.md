@@ -1,4 +1,12 @@
 # BeyondClass Update Log
+### Updates To Version 1.4.0
+* Major Overhaul
+	* Admin Mode Enabled (Create Student with 0000)
+	* Only allowed each category to view certain views
+	* Titles and Labels for each Views
+	* Custom View 8 allows users to search for specific course
+	* Bug Fixes
+
 ### Updates To Version 1.3.6
 * API Alpha.php
 

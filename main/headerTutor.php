@@ -1,5 +1,11 @@
+<?php
+/*VERSION 1.4.0*/
+	session_start();
+    	$user = $_SESSION['name'];
+
+?>	
+
 <html>
-<!-- VERSION 1.4.0-->
 	<head>
 		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
@@ -12,12 +18,24 @@
 			<div class = "collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class="redir" href ="/beyondclass/index.php">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Stats<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/beyondclass/views/customNine.php">Failing Students</a></li>
+							<li><a href="/beyondclass/views/customThree.php">Above Average Students</a></li>
+						    <li><a href="/beyondclass/views/customTwo.php">High Average Students</a></li>
+						    <li><a href="/beyondclass/views/customTen.php">Department Averages</a></li>
+						</ul>
+					</li>
                     <li><a class="redir" href ="/beyondclass/error.php">About Us</a></li>
-					<li>
-		                <p class="navbar-btn">
-		                    <a data-target ="#login" data-toggle="modal" class="btn btn-primary">Log In</a>
-		                </p>
-		            </li>
+					<li class="dropdown">
+						        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
+						        <span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+						         <li><a href="/beyondclass/error.php<?php echo $user?>">Profile</a></li>
+						         <li><a href="/beyondclass/main/destroy.php">Logout</a></li>
+						        </ul>
+						      </li>
 				</ul>
 			</div>
 		</div>
