@@ -21,7 +21,7 @@
 		<link rel="stylesheet" type="text/css" href="http://evanhahn.com/wp-content/uploads/2011/08/nonselect.css">
 		<script type="text/javascript" src="http://platform-api.sharethis.com/js/sharethis.js#property=589bbcb38cb6e0001365b8a2&product=inline-share-buttons"></script>
 	</head>
-	<body style = "margin-top: 70px;">
+	<body>
 		<h3 align="center">Tutors Available For Your Department</h3>
 		<table class="table table-hover">
 			<tr><th>Tutor ID</th>

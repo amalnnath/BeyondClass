@@ -1,27 +1,40 @@
 <html>
 <!-- VERSION 1.4.0-->
-	<head>
-		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">		
+	  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Beyond Class</title>
+		<meta name="description" content="Course Project">
+		<meta name="keywords" content="BeyondClass, Beyond Class, Tutoring, UOIT, Database Management">
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
 	</head>
 	<!-- This is the Navbar -->
-	<div class="navbar navbar-xs navbar-inverse navbar-fixed-top">
-		<div class = "container">
-			<a href="#" class="navbar-brand">BeyondClass</a>
-			<div class = "collapse navbar-collapse navHeaderCollapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a class="redir" href ="/beyondclass/index.php">Home</a></li>
-                    <li><a class="redir" href ="/beyondclass/error.php">About Us</a></li>
-					<li>
-		                <p class="navbar-btn">
-		                    <a data-target ="#login" data-toggle="modal" class="btn btn-primary">Log In</a>
-		                </p>
-		            </li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	<nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.php" title="BeyondClass">BeyondClass</a>
+          </div>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.php">Home</a></li>
+              <li><a href="about.php">About Us</a></li>
+              <li><a href="contact.php">Contact</a></li>
+              <li><a data-target ="#login" data-toggle="modal">Log In</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 	<!-- This is the footer -->
 	<div class ="navbar-default navbar-fixed-bottom">
 		<div class="container">

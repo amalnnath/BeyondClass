@@ -22,4 +22,7 @@
 ?>
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="/beyondclass/css/styles-merged.css">
+    <link rel="stylesheet" href="/beyondclass/css/style.min.css">
+    <link rel="stylesheet" href="/beyondclass/css/custom.css">
 </html>	

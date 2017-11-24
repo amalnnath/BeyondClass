@@ -12,34 +12,47 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">		
 	</head>
 	<!-- This is the Navbar -->
-	<div class="navbar navbar-xs navbar-inverse navbar-fixed-top">
-		<div class = "container">
-			<a href="#" class="navbar-brand">BeyondClass</a>
-			<div class = "collapse navbar-collapse navHeaderCollapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a class="redir" href ="/beyondclass/index.php">Home</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Stats<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="/beyondclass/views/customNine.php">Failing Students</a></li>
-							<li><a href="/beyondclass/views/customThree.php">Above Average Students</a></li>
-						    <li><a href="/beyondclass/views/customTwo.php">High Average Students</a></li>
-						    <li><a href="/beyondclass/views/customTen.php">Department Averages</a></li>
-						</ul>
-					</li>
-                    <li><a class="redir" href ="/beyondclass/error.php">About Us</a></li>
-					<li class="dropdown">
-						        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
-						        <span class="caret"></span></a>
-						        <ul class="dropdown-menu">
-						         <li><a href="/beyondclass/error.php<?php echo $user?>">Profile</a></li>
-						         <li><a href="/beyondclass/main/destroy.php">Logout</a></li>
-						        </ul>
-						      </li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	<nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.php" title="BeyondClass">BeyondClass</a>
+          </div>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/beyondclass/index.php">Home</a></li>
+              <li><a href="/beyondclas/about.php">About Us</a></li>
+              <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stats<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/beyondclass/views/customNine.php">Failing Students</a></li>
+              <li><a href="/beyondclass/views/customThree.php">Above Average Students</a></li>
+                <li><a href="/beyondclass/views/customTwo.php">High Average Students</a></li>
+                <li><a href="/beyondclass/views/customTen.php">Department Averages</a></li>
+            </ul>
+          </li>
+              <li><a href="contact.php">Contact</a></li>
+                        <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                     <li><a href="/beyondclass/error.php<?php echo $user?>">Profile</a></li>
+                     <li><a href="/beyondclass/main/destroy.php">Logout</a></li>
+                    </ul>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 	<!-- This is the footer -->
 	<div class ="navbar-default navbar-fixed-bottom">
 		<div class="container">
