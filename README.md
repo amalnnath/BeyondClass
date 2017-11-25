@@ -1,4 +1,7 @@
 # BeyondClass Update Log
+### Updates To Version 1.4.3
+* Bug Fixes
+
 ### Updates To Version 1.4.2
 * Font Fixes
 

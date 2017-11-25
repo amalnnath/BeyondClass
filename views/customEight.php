@@ -14,12 +14,8 @@ VERSION 1.4.0
 			 WHERE Course_ID = '$name'");
 	$result = mysqli_query($db, $sql);
 ?>
-  <head>
-		<link rel="stylesheet" type="text/css" href="http://evanhahn.com/wp-content/uploads/2011/08/nonselect.css">
-		<script type="text/javascript" src="http://platform-api.sharethis.com/js/sharethis.js#property=589bbcb38cb6e0001365b8a2&product=inline-share-buttons"></script>
-	</head>
+<html>
 	<body>
-		</script>
 		<h3 align="center">Tutor Availability</h3>
 		<table class="table table-hover">
 			<tr>
@@ -35,7 +31,16 @@ VERSION 1.4.0
 				}
 			?>
 		</table>
-		<button class="btn btn-primary"data-target ="#prompt" data-toggle="modal" >SEARCH</button>
+		<br>
+		<div align='center' width=100%>
+			<button class="btn btn-primary" data-target ="#prompt" data-toggle="modal">Search</button>
+		</div>
+
+
+	</body>
+
+
+
 
 	<div class="modal fade" id="prompt">
 	  <div class="modal-dialog">
@@ -55,5 +60,4 @@ VERSION 1.4.0
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
-	</body>
-</html>
+	</html>

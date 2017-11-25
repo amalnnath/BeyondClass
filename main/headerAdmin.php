@@ -32,7 +32,7 @@
               <li><a href="index.php">Home</a></li>
               <li><a href="about.php">About Us</a></li>
               <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Database Views<span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Database Views</a>
             <ul class="dropdown-menu">
               <li><a href="/beyondclass/views/dbStudent.php">Students</a></li>
                 <li><a href="/beyondclass/views/dbCourses.php">Courses</a></li>
@@ -41,7 +41,7 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Custom Views<span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Custom Views</a>
             <ul class="dropdown-menu">
               <li><a href="/beyondclass/views/customOne.php">FEAS Tutors</a></li>
                 <li><a href="/beyondclass/views/customTwo.php">High Average Tutors</a></li>
@@ -56,7 +56,7 @@
               <li><a href="contact.php">Contact</a></li>
                         <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
-                    <span class="caret"></span></a>
+                    </a>
                     <ul class="dropdown-menu">
                      <li><a href="/beyondclass/error.php<?php echo $user?>">Profile</a></li>
                      <li><a href="/beyondclass/main/destroy.php">Logout</a></li>
