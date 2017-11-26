@@ -1,4 +1,7 @@
 # BeyondClass Update Log
+### Updates To Version 1.4.5
+* Internal API
+
 ### Updates To Version 1.4.4
 * Bug Fixes
 * Custom View 4
