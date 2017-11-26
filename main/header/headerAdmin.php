@@ -40,6 +40,7 @@
                 <li><a href="/beyondclass/views/customTwo.php">High Average Tutors</a></li>
                 <li><a href="/beyondclass/views/customThree.php">Above Average Students</a></li>
                 <li><a href="/beyondclass/views/customFour.php">Booking Detail</a></li>
+                <li><a href="/beyondclass/views/customFive.php">Unbooked Tutors</a></li>
                 <li><a href="/beyondclass/views/customSix.php">Number of Tutors</a></li>
                 <li><a href="/beyondclass/views/customSeven.php">Bookings Per Tutor</a></li>
                 <li><a href="/beyondclass/views/customEight.php">Search For Available Tutor</a></li>

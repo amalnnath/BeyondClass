@@ -2,10 +2,14 @@
 <?php
 	include_once("../main/db.php");
 	include_once("../main/header.php");
-	$sql = "SELECT *
-          	FROM TUTOR
-          	RIGHT JOIN BOOKING
-          	ON T.Tutor_ID = B.Tutor_ID";
+	$sql = "SELECT T.Name
+			FROM TUTOR AS T
+			LEFT JOIN BOOKING AS B
+			ON T.Tutor_ID = B.Tutor_ID
+			WHERE Name NOT IN (SELECT T.Name
+			FROM TUTOR AS T
+			RIGHT JOIN BOOKING AS B
+			ON T.Tutor_ID = B.Tutor_ID)";
 
 	$result = mysqli_query($db, $sql);
 ?>
@@ -16,9 +20,9 @@
 	<body>
 		<br>
 		<br>
-		<h3 align="center">In Progress...</h3>
+		<h3 align="center">Names of Available Tutors</h3>
 		<table class="table table-hover">
-			<!--<tr>
+			<tr>
 				<th>Name</th>
 			</tr>
 			<?php
@@ -27,7 +31,7 @@
 					echo "<td>" . $row['Name'] . "</td>";
 					echo "</tr>";
 				}
-			?>-->
+			?>
 		</table>
 	</body>
 </html>
