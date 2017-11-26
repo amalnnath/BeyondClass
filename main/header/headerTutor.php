@@ -12,7 +12,7 @@
             </div>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
             </button>
-            <a class="navbar-brand" href="index.php" title="BeyondClass">BeyondClass</a>
+            <a class="navbar-brand" href="/beyondclass/index.php" title="BeyondClass">BeyondClass</a>
           </div>
           <div id="navbar-collapse" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -32,7 +32,6 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
                     </a>
                     <ul class="dropdown-menu">
-                     <li><a href="/beyondclass/error.php<?php echo $user?>">Profile</a></li>
                      <li><a href="/beyondclass/main/destroy.php">Logout</a></li>
                     </ul>
                   </li>

@@ -1,7 +1,7 @@
 <?php
   include_once("main/header.php");
 
-  	$sql = ("SELECT COUNT(*)
+	$sql = ("SELECT COUNT(*)
 			 FROM STUDENT");
 	$result = mysqli_query($db, $sql);
 	$row = mysqli_fetch_assoc($result);
@@ -25,7 +25,7 @@
 	$row = mysqli_fetch_assoc($result);
 	$courses = $row['COUNT(*)'];
 ?>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,38 +39,6 @@
     <link rel="stylesheet" href="css/custom.css">
   </head>
   <body>
- 
-<div class="modal fade" id="signup">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      	<button type="button" class="close" data-dismiss="modal" style="font-size: 50px;">&times;</button>
-  
-  <div class="modal fade" id="signupTutor">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      	<button type="button" class="close" data-dismiss="modal" style="font-size: 50px;">&times;</button>
-        <div class="modal-body">
-          <p><center><h3>Become a Tutor</h3>
-                <fieldset>
-                    <form action="/beyondclass/main/signup.php" method="post" enctype="multipart/form-data">
-                        <input  class="form-control" placeholder="Name" name="name" type="text"></br>
-                        <input  class="form-control" placeholder="Tutor ID" name="tid" type="text"></br>
-                        <input  class="form-control" placeholder="GPA" name="gpa" type="text"></br>
-                        <input  class="form-control" placeholder="Course ID" name="courseid" type="text"></br>
-                        <input  class="form-control" placeholder="Cost" name="cost" type="text"></br>
-                        <input  class="form-control" placeholder="Date Available" name="date" type="date"></br>
-            <input  class="form-control" placeholder="Time" name="time" type="text"></br>
-                        <input  class="form-control" placeholder="Password" name="pwd" type="password"></br>
-                        <input  class="btn btn-primary" name="signupTutor" type="submit" value="Sign Up">
-
-                        <footer class="clearfix">
-                    </form>
-                </fieldset><center></p>
-        </div>
-  
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
       <section class="flexslider">
         <ul class="slides">
           <li style="background-image: url(img/slider_1.jpg)" class="overlay">
@@ -402,7 +370,6 @@
         </div>
       </section>      
       </footer>
-
     </div>
     <!-- END wrapper -->
     <script src="js/scripts.min.js"></script>
@@ -410,3 +377,55 @@
     <script src="js/custom.js"></script>
   </body>
 </html>
+
+<div class="modal fade" id="signup">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p><center><h3>New Student</h3>
+                <fieldset>
+                    <form action="/beyondclass/main/signup.php" method="post" enctype="multipart/form-data">
+                        <input  class="form-control" placeholder="Name" name="name" type="text"></br>
+                        <input  class="form-control" placeholder="Student ID" name="sid" type="text"></br>
+                        <input  class="form-control" placeholder="GPA" name="gpa" type="text"></br>
+                        <input  class="form-control" placeholder="Email" name="email" type="text"></br>
+                        <input  class="form-control" placeholder="Cell Number" name="cellno" type="text"></br>
+                        <input  class="form-control" placeholder="Department Name" name="dept" type="text"></br>
+                        <input  class="form-control" placeholder="Password" name="pwd" type="password"></br>
+                        <input  class="btn btn-primary" name="signup" type="submit" value="Sign Up">
+
+                        <footer class="clearfix">
+                    </form>
+                </fieldset><center></p>
+        </div>
+  
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+  <div class="modal fade" id="signupTutor">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p><center><h3>Become a Tutor</h3>
+                <fieldset>
+                    <form action="/beyondclass/main/signup.php" method="post" enctype="multipart/form-data">
+                        <input  class="form-control" placeholder="Name" name="name" type="text"></br>
+                        <input  class="form-control" placeholder="Tutor ID" name="tid" type="text"></br>
+                        <input  class="form-control" placeholder="GPA" name="gpa" type="text"></br>
+                        <input  class="form-control" placeholder="Course ID" name="courseid" type="text"></br>
+                        <input  class="form-control" placeholder="Cost" name="cost" type="text"></br>
+                        <input  class="form-control" placeholder="Date Available" name="date" type="date"></br>
+            <input  class="form-control" placeholder="Time" name="time" type="text"></br>
+                        <input  class="form-control" placeholder="Password" name="pwd" type="password"></br>
+                        <input  class="btn btn-primary" name="signupTutor" type="submit" value="Sign Up">
+
+                        <footer class="clearfix">
+                    </form>
+                </fieldset><center></p>
+        </div>
+  
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->

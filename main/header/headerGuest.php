@@ -15,13 +15,13 @@
         <div class="btn-more js-btn-more visible-xs">
           <a href="#"><i class="icon-dots-three-vertical "></i></a>
         </div>
-        <a class="navbar-brand" href="index.php" title="BeyondClass">BeyondClass</a>
+        <a class="navbar-brand" href="/beyondclass/index.php" title="BeyondClass">BeyondClass</a>
       </div>
       <div id="navbar-collapse" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="about.php">About Us</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="/beyondclass/index.php">Home</a></li>
+          <li><a href="/beyondclass/about.php">About Us</a></li>
+          <li><a href="/beyondclass/contact.php">Contact</a></li>
           <li><a data-target ="#login" data-toggle="modal">Log In</a></li>
         </ul>
       </div>

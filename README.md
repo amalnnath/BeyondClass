@@ -1,4 +1,10 @@
 # BeyondClass Update Log
+### Updates To Version 1.4.8
+* Index Page Fix
+* Custom Eight Fix
+* Removed Padding in Custom Five
+* Removed Profile Option in header
+
 ### Updates To Version 1.4.7
 * Custom View 5
 

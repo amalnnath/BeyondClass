@@ -2,9 +2,11 @@
 	include_once("../main/db.php");
 	include_once("../main/header.php");
  
+	$coursename = $_POST['coursename'];
+
 	$sql = ("SELECT Name, Date_Available
 			 FROM TUTOR
-			 WHERE Course_ID = '$name'");
+			 WHERE Course_ID = '$coursename'");
 	$result = mysqli_query($db, $sql);
 ?>
 <html>
@@ -37,7 +39,7 @@
 	        <p><center><h3>Search for Course</h3>
                 <fieldset>
                     <form action="customEight.php" method="post" enctype="multipart/form-data">
-                        <input  class="form-control" placeholder="Name" name="name" type="text"></br>
+                        <input  class="form-control" placeholder="Name" name="coursename" type="text"></br>
                         <input  class="btn btn-primary" name="signupTutor" type="submit" value="Sign Up">
 
                         <footer class="clearfix">

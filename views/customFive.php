@@ -18,8 +18,6 @@
 		<script type="text/javascript" src="http://platform-api.sharethis.com/js/sharethis.js#property=589bbcb38cb6e0001365b8a2&product=inline-share-buttons"></script>
 	</head>
 	<body>
-		<br>
-		<br>
 		<h3 align="center">Names of Available Tutors</h3>
 		<table class="table table-hover">
 			<tr>

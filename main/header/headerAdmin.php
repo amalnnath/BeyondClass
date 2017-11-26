@@ -17,13 +17,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php" title="BeyondClass">BeyondClass</a>
+            <a class="navbar-brand" href="/beyondclass/index.php" title="BeyondClass">BeyondClass</a>
           </div>
 
           <div id="navbar-collapse" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.php">Home</a></li>
-              <li><a href="about.php">About Us</a></li>
+              <li><a href="/beyondclass/index.php">Home</a></li>
+              <li><a href="/beyondclass/about.php">About Us</a></li>
               <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Database Views</a>
             <ul class="dropdown-menu">
@@ -48,12 +48,11 @@
                 <li><a href="/beyondclass/views/customTen.php">Department Averages</a></li>
             </ul>
           </li>
-              <li><a href="contact.php">Contact</a></li>
+              <li><a href="/beyondclass/contact.php">Contact</a></li>
                         <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
                     </a>
                     <ul class="dropdown-menu">
-                     <li><a href="/beyondclass/error.php<?php echo $user?>">Profile</a></li>
                      <li><a href="/beyondclass/main/destroy.php">Logout</a></li>
                     </ul>
                   </li>
