@@ -1,4 +1,7 @@
 # BeyondClass Update Log
+### Updates To Version 1.4.6
+* Internal API Fixes
+
 ### Updates To Version 1.4.5
 * Internal API
 
