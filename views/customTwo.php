@@ -3,10 +3,12 @@
 <?php
 	include_once("../main/db.php");
 	include_once("../main/header.php");
-	$sql = ("SELECT AVG(T.Cost), T.Course_ID
-          FROM TUTOR T
-          WHERE T.Tutor_ID = ANY (SELECT Tutor_ID FROM TUTOR WHERE GPA >= 3.7)
-          GROUP BY T.Course_ID");
+	$sql = ("	SELECT AVG(T.Cost), T.Course_ID
+          	 	FROM TUTOR T
+          	  	WHERE T.Tutor_ID = ANY (SELECT Tutor_ID 
+          	  							FROM TUTOR 
+          	  							WHERE GPA >= 3.7)
+          		GROUP BY T.Course_ID");
 	$result = mysqli_query($db, $sql);
 ?>
   <head>
@@ -25,10 +27,8 @@
 					echo "<tr>";
 					echo "<td>" . $row['Course_ID'] . "</td>";
 					echo "<td>" . $row['AVG(T.Cost)'] . "</td>";
-
 					echo "</tr>";
 				}
-
 			?>
 		</table>
 	</body>

@@ -1,7 +1,4 @@
 <?php
-/*
-VERSION 1.2.3
-*/
 include_once("../main/db.php");
 $sql = "INSERT INTO BOOKING
 		VALUES 	('1', '123456780', '232228888', 'MECE 3390', '9:00', '11:00', '2000-01-01'),

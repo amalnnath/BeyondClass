@@ -1,5 +1,29 @@
 <?php
   include_once("main/header.php");
+
+  	$sql = ("SELECT COUNT(*)
+			 FROM STUDENT");
+	$result = mysqli_query($db, $sql);
+	$row = mysqli_fetch_assoc($result);
+	$students = $row['COUNT(*)'];
+
+	$sql = ("SELECT COUNT(*)
+			 FROM TUTOR");
+	$result = mysqli_query($db, $sql);
+	$row = mysqli_fetch_assoc($result);
+	$tutors = $row['COUNT(*)'];
+
+	$sql = ("SELECT COUNT(*)
+			 FROM BOOKING");
+	$result = mysqli_query($db, $sql);
+	$row = mysqli_fetch_assoc($result);
+	$bookings = $row['COUNT(*)'];
+
+	$sql = ("SELECT COUNT(*)
+			 FROM COURSES");
+	$result = mysqli_query($db, $sql);
+	$row = mysqli_fetch_assoc($result);
+	$courses = $row['COUNT(*)'];
 ?>
 <html lang="en">
   <head>
@@ -16,53 +40,15 @@
   </head>
   <body>
  
-   <div class="modal fade" id="login">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <p><center><h3>Login</h3>
-                <fieldset>
-                    <form action="/beyondclass/main/login.php" method="post" enctype="multipart/form-data">
-                        <input  class="form-control" placeholder="Username" type="username" name="username" type="text"></br>
-                        <input  class="form-control" placeholder="Password" type="password" name="password" type="password"></br>
-                        <input  class="btn btn-primary" name="login" type="submit" value="Login">
-                        <footer class="clearfix">
-                    </form>
-                </fieldset><center></p>
-        </div>
-  
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
 <div class="modal fade" id="signup">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-body">
-          <p><center><h3>New Student</h3>
-                <fieldset>
-                    <form action="/beyondclass/main/signup.php" method="post" enctype="multipart/form-data">
-                        <input  class="form-control" placeholder="Name" name="name" type="text"></br>
-                        <input  class="form-control" placeholder="Student ID" name="sid" type="text"></br>
-                        <input  class="form-control" placeholder="GPA" name="gpa" type="text"></br>
-                        <input  class="form-control" placeholder="Email" name="email" type="text"></br>
-                        <input  class="form-control" placeholder="Cell Number" name="cellno" type="text"></br>
-                        <input  class="form-control" placeholder="Department Name" name="dept" type="text"></br>
-                        <input  class="form-control" placeholder="Password" name="pwd" type="password"></br>
-                        <input  class="btn btn-primary" name="signup" type="submit" value="Sign Up">
-
-                        <footer class="clearfix">
-                    </form>
-                </fieldset><center></p>
-        </div>
+      	<button type="button" class="close" data-dismiss="modal" style="font-size: 50px;">&times;</button>
   
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-
-
   <div class="modal fade" id="signupTutor">
     <div class="modal-dialog">
       <div class="modal-content">
+      	<button type="button" class="close" data-dismiss="modal" style="font-size: 50px;">&times;</button>
         <div class="modal-body">
           <p><center><h3>Become a Tutor</h3>
                 <fieldset>
@@ -142,9 +128,9 @@
                 </div>
                 <div class="probootstrap-text">
                   <span class="probootstrap-counter">
-                    <span class="js-counter" data-from="0" data-to="15" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="js-counter" data-from="0" data-to="<?php echo $students?>" data-speed="2000" data-refresh-interval="50">1</span>
                   </span>
-                  <span class="probootstrap-counter-label">Students Booked</span>
+                  <span class="probootstrap-counter-label">Students</span>
                 </div>
               </div>
             </div>
@@ -155,7 +141,7 @@
                 </div>
                 <div class="probootstrap-text">
                   <span class="probootstrap-counter">
-                    <span class="js-counter" data-from="0" data-to="8" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="js-counter" data-from="0" data-to="<?php echo $tutors?>" data-speed="2000" data-refresh-interval="50">1</span>
                   </span>
                   <span class="probootstrap-counter-label">Certified Tutors</span>
                 </div>
@@ -168,7 +154,7 @@
                 </div>
                 <div class="probootstrap-text">
                   <span class="probootstrap-counter">
-                    <span class="js-counter" data-from="0" data-to="6" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="js-counter" data-from="0" data-to="<?php echo $courses?>" data-speed="2000" data-refresh-interval="50">1</span>
                   </span>
                   <span class="probootstrap-counter-label">Courses</span>
                 </div>
@@ -181,7 +167,7 @@
                 </div>
                 <div class="probootstrap-text">
                   <span class="probootstrap-counter">
-                    <span class="js-counter" data-from="0" data-to="29" data-speed="5000" data-refresh-interval="50">1</span>
+                    <span class="js-counter" data-from="0" data-to="<?php echo $bookings?>" data-speed="2000" data-refresh-interval="50">1</span>
                   </span>
                   <span class="probootstrap-counter-label">Bookings Completed</span>
                 </div>
@@ -293,7 +279,6 @@
           <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
               <h2>Meet Our Qualified Tutors</h2>
-              <p class="lead">Best Tutors at UOIT</p>
             </div>
           </div>
           <!-- END row -->
@@ -302,7 +287,7 @@
             <div class="col-md-3 col-sm-6">
               <div class="probootstrap-teacher text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_1.jpg" alt="placeholder" class="img-responsive">
+                  <img src="img/boy_three.png" alt="placeholder" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Aditya Kartik</h3>
@@ -319,7 +304,7 @@
             <div class="col-md-3 col-sm-6">
               <div class="probootstrap-teacher text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_5.jpg" alt="placeholder" class="img-responsive">
+                  <img src="img/boy_one.png" alt="placeholder" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Amit Kumar</h3>
@@ -337,7 +322,7 @@
             <div class="col-md-3 col-sm-6">
               <div class="probootstrap-teacher text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_6.jpg" alt="placeholder" class="img-responsive">
+                  <img src="img/boy_two.png" alt="placeholder" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Raj Kapoor</h3>
@@ -354,7 +339,7 @@
             <div class="col-md-3 col-sm-6">
               <div class="probootstrap-teacher text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_7.jpg" alt="placeholder" class="img-responsive">
+                  <img src="img/girl_one.png" alt="placeholder" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Jamie Mehta</h3>
@@ -416,24 +401,12 @@
           <!-- END row -->
         </div>
       </section>      
-        <div class="probootstrap-copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 text-left">
-                <p>&copy; 2017 <a href="https://probootstrap.com/">ProBootstrap:Enlight</a>. All Rights Reserved. Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="https://probootstrap.com/">ProBootstrap.com</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
       </footer>
 
     </div>
     <!-- END wrapper -->
-    
-
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
-
   </body>
 </html>

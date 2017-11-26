@@ -4,9 +4,9 @@ VERSION 1.4.0
 */
 	include_once("../main/db.php");
 	include_once("../main/header.php");
-	$sql = ("SELECT AVG(GPA), Department_Name
-			 FROM STUDENT
-			 GROUP BY Department_Name");
+	$sql = ("	SELECT AVG(GPA), Department_Name
+			 	FROM STUDENT
+			 	GROUP BY Department_Name");
 	$result = mysqli_query($db, $sql);
 ?>
   <head>

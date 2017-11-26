@@ -3,10 +3,10 @@
 <?php
 	include_once("../main/db.php");
 	include_once("../main/header.php");
-	$sql = "SELECT S.Name
-          FROM STUDENT AS S
-          WHERE S.GPA > (SELECT AVG(GPA)
-         FROM STUDENT)";
+	$sql = "	SELECT S.Name
+          		FROM STUDENT AS S
+          		WHERE S.GPA > (SELECT AVG(GPA)
+         		FROM STUDENT)";
 
 	$result = mysqli_query($db, $sql);
 ?>

@@ -1,10 +1,3 @@
-<?php
-/*VERSION 1.4.0*/
-	session_start();
-    	$user = $_SESSION['name'];
-
-?>	
-
 <html>
 	<head>
 		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -46,6 +39,7 @@
               <li><a href="/beyondclass/views/customOne.php">FEAS Tutors</a></li>
                 <li><a href="/beyondclass/views/customTwo.php">High Average Tutors</a></li>
                 <li><a href="/beyondclass/views/customThree.php">Above Average Students</a></li>
+                <li><a href="/beyondclass/views/customFour.php">Booking Detail</a></li>
                 <li><a href="/beyondclass/views/customSix.php">Number of Tutors</a></li>
                 <li><a href="/beyondclass/views/customSeven.php">Bookings Per Tutor</a></li>
                 <li><a href="/beyondclass/views/customEight.php">Search For Available Tutor</a></li>
@@ -66,31 +60,3 @@
           </div>
         </div>
       </nav>
-	<!-- This is the footer -->
-	<div class ="navbar-default navbar-fixed-bottom">
-		<div class="container">
-			<p class="navbar-text">Copyright 	&copy; 2017 BeyondClass. All rights reserved. Powered by Aphro Inc.</p>
-		</div>
-	</div>
-</html>		
-
-<!--Login Modal-->
-
-<div class="modal fade" id="login">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-body">
-	        <p><center><h3>Login</h3>
-                <fieldset>
-                    <form action="/beyondclass/main/login.php" method="post" enctype="multipart/form-data">
-                        <input  class="form-control" placeholder="Username" type="username" name="username" type="text"></br>
-                        <input  class="form-control" placeholder="Password" type="password" name="password" type="password"></br>
-                        <input  class="btn btn-primary" name="login" type="submit" value="Login">
-                        <footer class="clearfix">
-                    </form>
-                </fieldset><center></p>
-	      </div>
-	
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->

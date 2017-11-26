@@ -4,10 +4,10 @@ VERSION 1.4.0
 */
 	include_once("../main/db.php");
 	include_once("../main/header.php");
-	$sql = ("SELECT COUNT(B.S_ID), T.Name
-			FROM BOOKING AS B, TUTOR AS T
-			WHERE B.Tutor_ID = T.Tutor_ID
-			GROUP BY T.Name");
+	$sql = ("	SELECT COUNT(B.S_ID), T.Name
+				FROM BOOKING AS B, TUTOR AS T
+				WHERE B.Tutor_ID = T.Tutor_ID
+				GROUP BY T.Name");
 	$result = mysqli_query($db, $sql);
 ?>
   <head>

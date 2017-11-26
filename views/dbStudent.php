@@ -1,9 +1,9 @@
 <html>
-<!-- VERSION 1.4.0 -->
 <?php 
 	include_once("../main/db.php");
 	include_once("../main/header.php");
-	$sql = "SELECT * FROM STUDENT";
+	$sql = "SELECT * 
+			FROM STUDENT";
 	$result = mysqli_query($db, $sql);
 ?>
   <head>
@@ -20,19 +20,20 @@
 				<th>Cellphone Number</th>
 				<th>Department</th>
 				<th>Password (Encrypted)</th></tr>
-			<?php
-				while($row = mysqli_fetch_assoc($result)){
-					echo "<tr>";
-					echo "<td>" . $row['S_ID'] . "</td>";
-					echo "<td>" . $row['Name'] . "</td>";
-					echo "<td>" . $row['GPA'] . "</td>";
-					echo "<td>" . $row['Email'] . "</td>";
-					echo "<td>" . $row['CellNo'] . "</td>";
-					echo "<td>" . $row['Department_Name'] . "</td>";
-					echo "<td>" . $row['Password'] . "</td>";
-					echo "</tr>";
-				}
-			?>
+				<!--Outputs Database Fields Into Table-->
+				<?php
+					while($row = mysqli_fetch_assoc($result)){
+						echo "<tr>";
+						echo "<td>" . $row['S_ID'] . "</td>";
+						echo "<td>" . $row['Name'] . "</td>";
+						echo "<td>" . $row['GPA'] . "</td>";
+						echo "<td>" . $row['Email'] . "</td>";
+						echo "<td>" . $row['CellNo'] . "</td>";
+						echo "<td>" . $row['Department_Name'] . "</td>";
+						echo "<td>" . $row['Password'] . "</td>";
+						echo "</tr>";
+					}
+				?>
 		</table>
 	</body>
 </html>

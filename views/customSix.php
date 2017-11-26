@@ -1,12 +1,9 @@
 <?php
-/*
-VERSION 1.4.0
-*/
 	include_once("../main/db.php");
 	include_once("../main/header.php");
-	$sql = ("SELECT COUNT(Tutor_ID), Course_ID
-          FROM TUTOR
-          GROUP BY Course_ID");
+	$sql = ("	SELECT COUNT(Tutor_ID), Course_ID
+          		FROM TUTOR
+          		GROUP BY Course_ID");
 	$result = mysqli_query($db, $sql);
 ?>
   <head>
@@ -17,13 +14,13 @@ VERSION 1.4.0
 		<h3 align="center">Number of Tutors Per Course</h3>
 		<table class="table table-hover">
 			<tr>
-        <th> Course_ID</th>
+	        	<th> Course_ID</th>
 				<th> Number of Tutors</th>
-      	</tr>
+      		</tr>
 			<?php
 				while($row = mysqli_fetch_assoc($result)){
 					echo "<tr>";
-          echo "<td>" . $row['Course_ID'] . "</td>"; 
+          			echo "<td>" . $row['Course_ID'] . "</td>"; 
 					echo "<td>" . $row['COUNT(Tutor_ID)'] . "</td>";
 					echo "</tr>";
 				}

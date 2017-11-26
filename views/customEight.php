@@ -1,14 +1,7 @@
 <?php
-/*
-VERSION 1.4.0
-*/
 	include_once("../main/db.php");
 	include_once("../main/header.php");
-    
-    $name = $_POST['name'];
-	
-
-
+ 
 	$sql = ("SELECT Name, Date_Available
 			 FROM TUTOR
 			 WHERE Course_ID = '$name'");
@@ -35,13 +28,8 @@ VERSION 1.4.0
 		<div align='center' width=100%>
 			<button class="btn btn-primary" data-target ="#prompt" data-toggle="modal">Search</button>
 		</div>
-
-
 	</body>
-
-
-
-
+	<!--Search Prompt Modal-->
 	<div class="modal fade" id="prompt">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
@@ -54,10 +42,10 @@ VERSION 1.4.0
 
                         <footer class="clearfix">
                     </form>
-                </fieldset><center></p>
+                </fieldset>
+            <center></p>
 	      </div>
-	
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-	</html>
+	    </div>
+	  </div>
+	</div>
+</html>
