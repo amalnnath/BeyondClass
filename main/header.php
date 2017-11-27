@@ -1,6 +1,7 @@
 <?php
 /*VERSION 1.4.0*/
 	session_start();
+    include_once("db.php")
     if(isset($_SESSION['username'])) {
     	$user = $_SESSION['username'];
     	$dept = $_SESSION['dept'];
@@ -19,8 +20,6 @@
     else{
     	include_once("header/headerGuest.php");
     }
-
-    include_once("db.php")
 ?>
 <html>
     <head>
@@ -31,6 +30,7 @@
         <link rel="stylesheet" href="/beyondclass/css/style.min.css">
         <link rel="stylesheet" href="/beyondclass/css/custom.css">
     </head>
+
     <!-- This is the footer -->
     <div class ="navbar-default navbar-fixed-bottom">
         <div class="container">
@@ -56,7 +56,7 @@
                         </fieldset>
                     <center></p>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+            </div>
+        </div>
+    </div>
 </html>	

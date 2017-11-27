@@ -26,7 +26,7 @@
               <li><a href="/beyondclass/views/customFive.php">Unbooked Tutors</a></li>
             </ul>
           </li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="/beyondclass/contact.php">Contact</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $user;?>
             </a>

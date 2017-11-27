@@ -1,7 +1,4 @@
-<html>
-<!-- VERSION 1.4.0 -->
 <?php
-	include_once("../main/db.php");
 	include_once("../main/header.php");
 	$sql = ("	SELECT AVG(T.Cost), T.Course_ID
           	 	FROM TUTOR T
@@ -11,6 +8,7 @@
           		GROUP BY T.Course_ID");
 	$result = mysqli_query($db, $sql);
 ?>
+<html>
   <head>
 		<link rel="stylesheet" type="text/css" href="http://evanhahn.com/wp-content/uploads/2011/08/nonselect.css">
 		<script type="text/javascript" src="http://platform-api.sharethis.com/js/sharethis.js#property=589bbcb38cb6e0001365b8a2&product=inline-share-buttons"></script>

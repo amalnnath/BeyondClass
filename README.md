@@ -1,4 +1,7 @@
 # BeyondClass Update Log
+### Updates To Version 1.4.9
+* Cleaned up code
+
 ### Updates To Version 1.4.8
 * Index Page Fix
 * Custom Eight Fix

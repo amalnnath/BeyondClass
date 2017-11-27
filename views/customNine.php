@@ -1,8 +1,4 @@
 <?php
-/*
-VERSION 1.4.0
-*/
-	include_once("../main/db.php");
 	include_once("../main/header.php");
 	$sql = ("SELECT Name
 			 FROM STUDENT

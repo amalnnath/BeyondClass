@@ -1,5 +1,4 @@
 <?php
-	include_once("../main/db.php");
 	include_once("../main/header.php");
  
 	$coursename = $_POST['coursename'];
@@ -41,7 +40,6 @@
                     <form action="customEight.php" method="post" enctype="multipart/form-data">
                         <input  class="form-control" placeholder="Name" name="coursename" type="text"></br>
                         <input  class="btn btn-primary" name="signupTutor" type="submit" value="Sign Up">
-
                         <footer class="clearfix">
                     </form>
                 </fieldset>

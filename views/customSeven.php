@@ -1,8 +1,4 @@
 <?php
-/*
-VERSION 1.4.0
-*/
-	include_once("../main/db.php");
 	include_once("../main/header.php");
 	$sql = ("	SELECT COUNT(B.S_ID), T.Name
 				FROM BOOKING AS B, TUTOR AS T
@@ -10,7 +6,8 @@ VERSION 1.4.0
 				GROUP BY T.Name");
 	$result = mysqli_query($db, $sql);
 ?>
-  <head>
+<html>
+  	<head>
 		<link rel="stylesheet" type="text/css" href="http://evanhahn.com/wp-content/uploads/2011/08/nonselect.css">
 		<script type="text/javascript" src="http://platform-api.sharethis.com/js/sharethis.js#property=589bbcb38cb6e0001365b8a2&product=inline-share-buttons"></script>
 	</head>

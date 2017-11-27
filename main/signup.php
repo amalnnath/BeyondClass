@@ -1,12 +1,7 @@
 <?php
-/*
-VERSION 1.3.4
-*/
-	
 	include_once("db.php");
 	echo "ARRIVED ";
 	if(isset($_POST['signup'])){
-
 
 		$name = $_POST['name'];
 		$sid = $_POST['sid'];
@@ -79,7 +74,7 @@ VERSION 1.3.4
         $dbsid = $row['Tutor_ID'];
 
         if($tid == $dbsid){
-        	echo "USERNAME TAKEN!";
+        	echo "ID ALREADY IN USE, MAKE SURE CORRECT STUDENT/TUTOR ID WAS ENTERED!";
         }
         else{
         	if($name && $tid && $gpa && $courseid && $cost && $date && $time && $pwd){
@@ -88,7 +83,7 @@ VERSION 1.3.4
         		echo "SIGN UP SUCCESS. PLEASE GO BACK TO HOME PAGE TO LOG IN!";
         	} else {
 
-        		echo "SIGN UP FAILED";
+        		echo "SIGN UP FAILED. PLEASE TRY AGAIN LATER!";
         	}
 
         }

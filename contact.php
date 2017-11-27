@@ -20,11 +20,6 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
-
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
       <section class="probootstrap-section probootstrap-section-sm">
@@ -61,26 +56,9 @@
             </div>
           </div>
         </div>
-      </section>          <!-- END row -->
-        </div>
-        <div class="probootstrap-copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 text-left">
-                <p>&copy; 2017 <a href="https://probootstrap.com/">ProBootstrap:Enlight</a>. All Rights Reserved. Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="https://probootstrap.com/">ProBootstrap.com</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-    </div>
-    <!-- END wrapper -->
-    
-
+      </section> 
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
-
   </body>
 </html>

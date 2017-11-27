@@ -1,5 +1,4 @@
 <?php 
-	include_once("../main/db.php");
 	include_once("../main/header.php");
 	$sql = "SELECT * 
 			FROM TUTOR";

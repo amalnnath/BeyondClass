@@ -1,10 +1,10 @@
 <?php 
-	include_once("../main/db.php");
 	include_once("../main/header.php");
 	$sql = "SELECT * 
 			FROM BOOKING";
 	$result = mysqli_query($db, $sql);
 ?>
+
 <html>
   	<head>
 		<link rel="stylesheet" type="text/css" href="http://evanhahn.com/wp-content/uploads/2011/08/nonselect.css">
