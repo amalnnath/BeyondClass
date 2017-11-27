@@ -1,10 +1,10 @@
 <?php
 /*VERSION 1.4.0*/
 	session_start();
-    include_once("db.php")
+
     if(isset($_SESSION['username'])) {
         $username = $_SESSION['username'];
-    	$user = $_SESSION['username'];
+    	$user = $_SESSION['name'];
     	$dept = $_SESSION['dept'];
     	$title = $_SESSION['title'];
 
@@ -21,6 +21,8 @@
     else{
     	include_once("header/headerGuest.php");
     }
+
+    include_once("db.php")
 ?>
 <html>
     <head>

@@ -1,4 +1,8 @@
 # BeyondClass Update Log
+### Updates To Version 1.4.11
+* Fixed Name in Navbar again
+
+
 ### Updates To Version 1.4.10
 * Fixed Name in Navbar
 
