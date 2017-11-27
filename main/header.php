@@ -4,7 +4,7 @@
     include_once("db.php")
     if(isset($_SESSION['username'])) {
         $username = $_SESSION['username'];
-    	$name = $_SESSION['username'];
+    	$user = $_SESSION['username'];
     	$dept = $_SESSION['dept'];
     	$title = $_SESSION['title'];
 
