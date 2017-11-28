@@ -1,6 +1,0 @@
-//VERSION 1.2.3
-
-git add .
-git commit -m "seventh commit"
-git push -u origin master
-

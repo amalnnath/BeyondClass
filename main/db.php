@@ -1,5 +1,5 @@
 <?php
-	$db=mysqli_connect("localhost","debian-sys-maint","kMKoyWiaKi3scrfI","beyondclass") or die('Failed to connect to the Database');
+	$db=mysqli_connect("<server>","<username>","<password>","<database>") or die('Failed to connect to the Database');
 ?>
 
 
