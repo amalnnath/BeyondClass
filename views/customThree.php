@@ -17,7 +17,8 @@
 		<table class="table table-hover">
 			<tr>
 				<th>Name</th>
-				</tr>
+			</tr>
+			<!--Outputs Database Fields Into Table-->
 			<?php
 				while($row = mysqli_fetch_assoc($result)){
 					echo "<tr>";

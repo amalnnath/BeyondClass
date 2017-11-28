@@ -1,13 +1,13 @@
 <?php
-/*VERSION 1.4.0*/
+    /*SETS SESSIONS*/
 	session_start();
-
     if(isset($_SESSION['username'])) {
         $username = $_SESSION['username'];
     	$user = $_SESSION['name'];
     	$dept = $_SESSION['dept'];
     	$title = $_SESSION['title'];
 
+    /*ASSIGNS SPECIFIC HEADER DEPEDING ON WHO YOU ARE*/    
     	if($title == 'Admin'){
     		include_once("header/headerAdmin.php");
     	} 

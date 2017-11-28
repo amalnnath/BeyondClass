@@ -42,8 +42,8 @@ Sai Pedamallu
 [More Credits](https://github.com/amalnnath/BeyondClass/blob/master/CREDITS)
 
 ## Version
-**Latest Version: 1.5.7**
-View *CHANGELOG* to view version changes
+**Latest Version: 1.5.8**
+[View Changes](https://github.com/amalnnath/BeyondClass/blob/master/CHANGELOG)
 
 ## License
 [MIT](https://github.com/amalnnath/BeyondClass/blob/master/LICENSE)

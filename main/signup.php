@@ -3,6 +3,7 @@
 	echo "ARRIVED ";
 	if(isset($_POST['signup'])){
 
+		/*Store form information in local variables*/
 		$name = $_POST['name'];
 		$sid = $_POST['sid'];
 		$gpa = $_POST['gpa'];
@@ -18,8 +19,10 @@
 		$cellno = mysqli_real_escape_string($db, $cellno);
 		$dept = mysqli_real_escape_string($db, $dept);
 		$pwd = mysqli_real_escape_string($db, $pwd);
+		/*Encrypt Password*/
 		$pwd = md5($pwd);
 		
+		/*Check if username is taken*/
 		$sql = "SELECT * FROM STUDENT WHERE S_ID='$sid' LIMIT 1";
         $query = mysqli_query($db, $sql);
         $row = mysqli_fetch_array($query);
@@ -30,7 +33,7 @@
         	echo "USERNAME TAKEN!";
         }
 
-
+        /*If all information is given, insert into database*/
         else{
         	if($name && $sid && $gpa && $email && $cellno && $dept && $pwd){
         		$sql = "INSERT INTO STUDENT VALUES ('$sid', '$name', '$gpa', '$email', '$cellno', '$dept', '$pwd')";

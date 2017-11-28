@@ -17,6 +17,7 @@
 	        	<th> Course_ID</th>
 				<th> Number of Tutors</th>
       		</tr>
+      		<!--Outputs Database Fields Into Table-->
 			<?php
 				while($row = mysqli_fetch_assoc($result)){
 					echo "<tr>";

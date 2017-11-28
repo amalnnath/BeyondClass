@@ -1,6 +1,6 @@
 <?php
-/*VERSION 1.4.0*/
 	session_start();
+	/*REMOVE SESSIONS*/
 	if(isset($_SESSION['username'])) {
 		unset($_SESSION['username']);
 		unset($_SESSION['dept']);

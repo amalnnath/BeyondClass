@@ -22,6 +22,7 @@
 		        <th> Booking Start Time </th>
 		        <th> Booking Date </th>
 			</tr>
+			<!--Outputs Database Fields Into Table-->
 			<?php
 				while($row = mysqli_fetch_assoc($result)){
 					echo "<tr>";
