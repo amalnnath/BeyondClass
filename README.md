@@ -27,7 +27,7 @@ To make sure that the database is implemented correctly, run the following 4 pag
 *Once you have successfully viewed the four pages, you are ready to explore the website!*
 
 ## API
-
+This internal api uses REST method to generate a JSON webpage. It is connected to the database; allowing users to input student number and in return displaying the corresponding name and gpa.
 
 In order to utilize the provided API, pleae use the following format to access the file in the URL bar:
 
@@ -39,9 +39,11 @@ Ali Khan
 Vrund Shah
 Sai Pedamallu
 
+[More Credits](https://github.com/amalnnath/beyondclass/CREDITS)
+
 ## Version
 **Latest Version: 1.5.3**
 View *CHANGELOG* to view version changes
 
 ## License
-View *LICENSE* to view license and credits
+[MIT](https://github.com/amalnnath/beyondclass/LICENSE)
