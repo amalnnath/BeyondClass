@@ -1,100 +1,29 @@
-# BeyondClass Update Log
-### Updates To Version 1.5.0
-* Ready to be handed in!
+# BeyondClass
 
-### Updates To Version 1.4.11
-* Fixed Name in Navbar again
+##What is BeyondClass
+As we go through life, we notice that we face challenges in certain areas that are not easy to solve on one's own. Best way to solve those problems, is with the help of a fellow peer. At UOIT, we have noticed that peer tutor sessions for most of the challenging upper year courses are not available. So we created “BeyondClass” which will help students sign up with a peer tutor for the course(s) that they are having difficulty with.
 
-### Updates To Version 1.4.10
-* Fixed Name in Navbar
+## Getting Started
 
-### Updates To Version 1.4.8
-* Index Page Fix
-* Custom Eight Fix
-* Removed Padding in Custom Five
-* Removed Profile Option in header
+### Prerequisites
+* LAMP / WAMP depending on your operating system
+* phpMyAdmin (Usually packaged with WAMP)
 
-### Updates To Version 1.4.7
-* Custom View 5
+### Setting Up The Database
+* Open and log into phpMyAdmin (http://localhost/phpmyadmin/)
+* Create a database named "beyondclass"
+* Open the database and navigate to the "import" tab
+* Import the beyondclass.sql file in and press go! 
 
-### Updates To Version 1.4.6
-* Internal API Fixes
+## Running Tests
+* To make sure that the database is implemented correctly, run the following 4 pages by either manually setting the path or logging in as admin (Username: 0000, Password: password)
+	* /view/dbBooking.php
+	* /view/dbCourses.php
+	* /view/dbStudent.php
+	* /view/dbTutor.php
+	
+* Once you have successfully viewed the four pages, you are ready to explore the website!
 
-### Updates To Version 1.4.5
-* Internal API
-
-### Updates To Version 1.4.4
-* Bug Fixes
-* Custom View 4
-
-### Updates To Version 1.4.3
-* Bug Fixes
-
-### Updates To Version 1.4.2
-* Font Fixes
-
-### Updates To Version 1.4.1
-* Style Changes
-
-### Updates To Version 1.4.0
-* Major Overhaul
-	* Admin Mode Enabled (Create Student with 0000)
-	* Only allowed each category to view certain views
-	* Titles and Labels for each Views
-	* Custom View 8 allows users to search for specific course
-	* Bug Fixes
-
-### Updates To Version 1.3.6
-* API Alpha.php
-
-### Updates To Version 1.3.5
-* Students and Tutors can now both log in or sign up!
-
-### Updates To Version 1.3.4
-* Fixes to both headers
-
-### Updates To Version 1.3.3
-* Views 6 - 10
-* Tweaked Header to navigate views 6 - 10
-
-### Updates To Version 1.3.2
-* Password column in Tutor and Student tables
-* Index, Login and Signup have been changed to allow for new data
-* addPassword.php was created to run to create Password column
-
-### Updates To Version 1.3.1
-* Custom One tailored to User's Dept, FEAS if not signed in
-* Header, Destroy and Login changed to allow for new data
-
-### Updates To Version 1.2.9
-* Sign Up Page (Students Only)
-
-### Updates To Version 1.2.8
-* Stylized Index Page
-
-### Updates To Version 1.2.7
-* Bug Fixes
-
-### Updates To Version 1.2.6
-* Improved Login System
-* Destroy Page
-* Add Peter Test Removed
-
-### Updates To Version 1.2.5
-* Login System (Students Only)
-
-### Updates To Version 1.2.4
-* Custom Two Page
-* Custom Three Page
-* Modified Header
-* Home Page
-* Error Page
-
-### Updates To Version 1.2.3
-* Consistency
-* Readme Page
-
-### Updates To Version 1.2.2
-* Header Tweaked
-* Custom One Page
-* Error Page
+## Version
+* Latest version is 1.5.1
+* View CHANGELOG.md to view version changes
