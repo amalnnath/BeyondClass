@@ -1,6 +1,6 @@
 # BeyondClass
 
-##What is BeyondClass
+## What is BeyondClass
 As we go through life, we notice that we face challenges in certain areas that are not easy to solve on one's own. Best way to solve those problems, is with the help of a fellow peer. At UOIT, we have noticed that peer tutor sessions for most of the challenging upper year courses are not available. So we created “BeyondClass” which will help students sign up with a peer tutor for the course(s) that they are having difficulty with.
 
 ## Getting Started
@@ -25,5 +25,5 @@ As we go through life, we notice that we face challenges in certain areas that a
 * Once you have successfully viewed the four pages, you are ready to explore the website!
 
 ## Version
-* Latest version is 1.5.1
+* Latest version is 1.5.2
 * View CHANGELOG.md to view version changes
