@@ -39,11 +39,11 @@ Ali Khan
 Vrund Shah
 Sai Pedamallu
 
-[More Credits](https://github.com/amalnnath/beyondclass/CREDITS)
+[More Credits](https://github.com/amalnnath/BeyondClass/blob/master/CREDITS)
 
 ## Version
 **Latest Version: 1.5.3**
 View *CHANGELOG* to view version changes
 
 ## License
-[MIT](https://github.com/amalnnath/beyondclass/LICENSE)
+[MIT](https://github.com/amalnnath/BeyondClass/blob/master/LICENSE)
