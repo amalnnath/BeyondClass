@@ -42,7 +42,7 @@ Sai Pedamallu
 [More Credits](https://github.com/amalnnath/BeyondClass/blob/master/CREDITS)
 
 ## Version
-**Latest Version: 1.5.3**
+**Latest Version: 1.5.7**
 View *CHANGELOG* to view version changes
 
 ## License
