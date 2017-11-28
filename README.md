@@ -1,7 +1,9 @@
 # BeyondClass Update Log
+### Updates To Version 1.5.0
+* Ready to be handed in!
+
 ### Updates To Version 1.4.11
 * Fixed Name in Navbar again
-
 
 ### Updates To Version 1.4.10
 * Fixed Name in Navbar
@@ -93,7 +95,6 @@
 * Readme Page
 
 ### Updates To Version 1.2.2
-
 * Header Tweaked
 * Custom One Page
 * Error Page

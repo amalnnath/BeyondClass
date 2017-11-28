@@ -23,7 +23,6 @@
             <ul class="dropdown-menu">
               <li><a href="/beyondclass/views/customNine.php">Failing Students</a></li>
               <li><a href="/beyondclass/views/customThree.php">Above Average Students</a></li>
-              <li><a href="/beyondclass/views/customTwo.php">High Average Students</a></li>
               <li><a href="/beyondclass/views/customTen.php">Department Averages</a></li>
             </ul>
           </li>
